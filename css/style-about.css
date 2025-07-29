@@ -1,0 +1,165 @@
+/* Root Variables */
+:root {
+  --green: #00693C;
+  --brown: #3E2723;
+  --yellow: #fbc02d;
+  --bg-light: #D6F9DD;
+  --white: #ffffff;
+  --shadow-light: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--brown);
+}
+
+h2 {
+  font-family: 'Coustard', serif;
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Origin Section */
+.origin-section {
+  padding: 60px 20px;
+  background: var(--white);
+}
+
+.origin-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.origin-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.origin-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.origin-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.origin-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: var(--shadow-light);
+}
+
+/* Founder Section */
+.founder-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.founder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.founder-content img {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-light);
+}
+
+.founder-text h3 {
+  font-size: 1.4rem;
+  margin: 10px 0 5px;
+  color: var(--brown);
+}
+
+.founder-text p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Allies Section */
+.allies-section {
+  padding: 40px 20px;
+  background-color: var(--bg-light);
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Volunteer Section */
+.volunteer-section {
+  padding: 60px 20px;
+  background: var(--white);
+}
+
+.volunteer-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.volunteer-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-5px);
+}
+
+.volunteer-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.volunteer-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: var(--green);
+}
+
+.volunteer-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 60px 20px;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+
+.mission-section p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}

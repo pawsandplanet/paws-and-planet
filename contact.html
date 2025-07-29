@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Paws and Planet</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+</head>
+
+<body>
+  <!-- Navbar (reuse from index) -->
+  <nav class="navbar">
+  <div class="navbar-left">
+    <a href="index.html"><img src="assets/logo.png" alt="Logo" style="height: 50px;" /></a>
+  </div>
+  
+  <div class="hamburger" id="hamburger">&#9776;</div>
+  
+  <div class="navbar-center">
+    <div class="navbar-links">
+      <a href="about.html">About</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="navbar-right">
+    <a href="donate.html" class="donate-button">Donate</a>
+  </div>
+  <!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="get-involved.html">Get Involved</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+</div>
+</nav>
+
+<!-- 🌟 Contact Hero Section -->
+<section class="contact-hero" data-aos="fade-down">
+  <h1>We’d Love to Hear From You!</h1>
+  <p>Whether you're looking to adopt, foster, volunteer or just say hi — drop us a message!</p>
+</section>
+
+<!-- ✉️ Contact Form Section -->
+<section class="contact-form-section" data-aos="fade-up">
+  <div class="contact-form-container">
+    <form action="mailto:pnr2eo@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="Name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="Email" required />
+      </div>
+
+      <div class="form-group full">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-green">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- 📍 Location & Contact Info -->
+<section class="contact-info-section" data-aos="fade-up">
+  <div class="contact-info-container">
+
+    <!-- Google Map -->
+    <div class="map-box">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!..." 
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Info -->
+    <div class="info-box">
+      <h3>Get in Touch</h3>
+      <p><strong>Email:</strong> pawsandplanet@email.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Location:</strong> Kolkata, West Bengal, India</p>
+      <p><strong>Hours:</strong> Mon–Sat | 9:00 AM – 6:00 PM</p>
+    </div>
+
+  </div>
+</section>
+
+<!----FAQ section----->
+<section class="faq-section" data-aos="fade-up">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">How can I volunteer?</button>
+      <div class="faq-answer">
+        <p>You can volunteer by filling out our form on the Get Involved page. Remote volunteering options are available too!</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you offer fostering support?</button>
+      <div class="faq-answer">
+        <p>Yes! We provide guidance and veterinary support throughout the fostering period.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Where do you operate?</button>
+      <div class="faq-answer">
+        <p>We're based in West Bengal but work with a wider network of allies like People for Animals and Ashari.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Social Links---->
+<section class="social-section" id="follow-us">
+  <h3>Follow Us</h3>
+    <div class="social-links" data-aos="fade-left">
+      <a href="https://instagram.com/paws_and_planet_pnrf" target="_blank" class="social-icon instagram">
+        <img src="assets/icons/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://wa.me/YOUR_NUMBER" target="_blank" class="social-icon whatsapp">
+        <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
+      </a>
+      <a href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank" class="social-icon youtube">
+        <img src="assets/icons/youtube.svg" alt="YouTube" />
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer (reuse) -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Voices of the Unheard</h3>
+        <p>&copy; 2025 Paws and Planet. All rights reserved.</p>
+      </div>
+
+      <div class="footer-center">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <h4>Connect</h4>
+        <div class="footer-socials">
+          <a href="https://instagram.com/paws_and_planet_pnrf" target="_blank">
+            <img src="assets/icons/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://wa.me/YOUR_NUMBER" target="_blank">
+            <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
+          </a>
+          <a href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank">
+            <img src="assets/icons/youtube.svg" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS & JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
