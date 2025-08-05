@@ -82,7 +82,7 @@ if (form) {
     };
 
     try {
-      const res = await fetch("/.netlify/functions/sendMail", {
+      const res = await fetch("/.netlify/functions/sendmail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
