@@ -17,15 +17,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body::before {
-  content: "FONT TEST - COUSTARD";
-  font-family: 'Coustard', serif;
-  font-size: 2rem;
-  color: red;
-  display: block;
-  text-align: center;
-}
-
 body {
   font-family: 'Quicksand', sans-serif;
   color: #3E2723;
@@ -132,6 +123,7 @@ button {
 .hero-content {
   display: flex;
   align-items: center;
+  font-family: 'Coustard', serif;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1200px;
