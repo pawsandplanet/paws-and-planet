@@ -23,8 +23,8 @@ body {
   background-color: var(--bg-light);
 }
 
-h1, h2, h3, .navbar-left img + span, .logo-text {
-  font-family: 'Coustard', serif;
+h1, h2, h3,h4,h5,h6 .navbar-left img + span, .logo-text {
+  font-family: 'Libre Baskerville', serif;
 }
 
 .navbar-links a,
@@ -120,7 +120,6 @@ button {
 .hero-content {
   display: flex;
   align-items: center;
-  font-family: 'Coustard', serif;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1200px;
@@ -2013,14 +2012,3 @@ code {
     100% { transform: rotate(360deg); }
   }
   
-/* Set Quicksand for body text */
-body, p, li, a, input, textarea, button {
-  font-family: 'Quicksand', sans-serif;
-}
-
-/* Apply Coustard to headings and branding only */
-h1, h2, h3, h4, h5, h6,
-.logo-text,
-.navbar-left img + span {
-  font-family: 'Coustard', serif !important;
-}
