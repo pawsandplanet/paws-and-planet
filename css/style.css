@@ -2012,3 +2012,15 @@ code {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+  
+/* Set Quicksand for body text */
+body, p, li, a, input, textarea, button {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Apply Coustard to headings and branding only */
+h1, h2, h3, h4, h5, h6,
+.logo-text,
+.navbar-left img + span {
+  font-family: 'Coustard', serif !important;
+}
