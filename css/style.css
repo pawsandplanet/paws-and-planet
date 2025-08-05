@@ -1,6 +1,8 @@
 
 /* style.css */
 
+
+
 :root {
   --green: #00693C;
   --brown: #3E2723;
@@ -13,6 +15,15 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body::before {
+  content: "FONT TEST - COUSTARD";
+  font-family: 'Coustard', serif;
+  font-size: 2rem;
+  color: red;
+  display: block;
+  text-align: center;
 }
 
 body {
