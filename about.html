@@ -1,198 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | Paws and Planet</title>
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="assets/logo.png" type="image/png" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>About Us | Paws and Planet</title>
+
+	<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Coustard&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- AOS -->
+		<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+	<!-- Custom Styles -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" href="assets/logo.png" type="image/png" />
 </head>
 
 <body>
-  <!-- Navbar (reuse from index) -->
-  <nav class="navbar">
-  <div class="navbar-left">
-    <a href="index.html"><img src="assets/logo.png" alt="Logo" style="height: 50px;" /></a>
-  </div>
+	<!-- Navbar (reuse from index) -->
+		<nav class="navbar">
+			<div class="navbar-left">
+				<a href="index.html"><img src="assets/logo.png" alt="Logo" style="height: 50px;" /></a>
+			</div>
+
+			<div class="hamburger" id="hamburger">&#9776;</div>
+			
+			<div class="navbar-center">
+				<div class="navbar-links">
+					<a href="about.html">About</a>
+					<a href="get-involved.html">Get Involved</a>
+					<a href="underc.html">News</a>
+					<a href="contact.html">Contact</a>
+				</div>
+			</div>
+
+			<div class="navbar-right">
+				<a href="donate.html" class="donate-button">Donate</a>
+			</div>
+	<!-- Mobile Menu -->
+			<div class="mobile-menu" id="mobileMenu">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="get-involved.html">Get Involved</a>
+				<a href="news.html">News</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		</nav>
+
+<!-- 1️⃣ Story + Team Photo -->
+	<section class="origin-section">
+		<div class="origin-container" data-aos="fade-up">
+			<div class="origin-text">
+				<h1>How It All Began</h1>
+				<p>
+					Arushi grew up in a home quietly shaped by compassion — alongside three rescued stray cats, 
+					each found in heartbreaking circumstances: wrapped in plastic, trapped in drains, left behind.
+				</p>
+				<p>
+					On her walks back from school, she would often stop to feed community dogs. Over time, she witnessed the quiet but devastating cycle of suffering — 
+					especially among puppies — who died from road accidents, starvation, or preventable diseases.
+				</p>
+				<p>
+					When her beloved cat Mina passed away, she made herself a quiet promise: to help as many animals as she could. 
+					There was no grand plan, no resources — just kind hands and shared hearts.
+				</p>
+				<p>
+					What began as small acts of care slowly turned into a movement. 
+					<strong>Friends, neighbours, students, and animal lovers from all walks of life came together</strong>, 
+					united by the same belief — that no creature should suffer unseen.
+				</p>
+				<blockquote>
+					“It’s never been about one person — it’s always been about the power of many.”
+				</blockquote>
+				<p>
+					Today, much of their focus is on <strong>animal birth control and vaccinations</strong> — not just as rescue, but as prevention. 
+					By reducing the number of animals struggling on the streets, ensuring they're protected from disease, 
+					and preventing tragic deaths due to accidents, the team hopes to make care manageable for community feeders and safer for the animals they love.
+				</p>
+				<blockquote>
+					“The vision was simple: to ensure no animal is left unseen, unheard, or unloved.”
+				</blockquote>
+			</div>
+			<div class="origin-image vertical-feature">
+				<img src="assets/ourwhy.jpg" alt="Stary dog with puppies" />
+			</div>
+		</div>
+	</section>
   
-  <div class="hamburger" id="hamburger">&#9776;</div>
-  
-  <div class="navbar-center">
-    <div class="navbar-links">
-      <a href="about.html">About</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="news.html">News</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-
-  <div class="navbar-right">
-    <a href="donate.html" class="donate-button">Donate</a>
-  </div>
-  <!-- Mobile Menu -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="get-involved.html">Get Involved</a>
-  <a href="news.html">News</a>
-  <a href="contact.html">Contact</a>
-</div>
-</nav>
-
-  <!-- 1️⃣ Story + Team Photo -->
-  <section class="origin-section">
-    <div class="origin-container" data-aos="fade-up">
-      <div class="origin-text">
-        <h2>How It All Began</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A meaningful journey that started with compassion and courage...</p>
-      </div>
-      <div class="origin-image">
-        <img src="assets/team-placeholder.jpg" alt="Team Photo" />
-      </div>
-    </div>
-  </section>
-  
-  <!-- 🌟 Impact Stats Banner -->
-<section class="impact-banner" data-aos="fade-up">
-  <div class="impact-container">
-    <div class="impact-item">
-      <h3>300+</h3>
-      <p>Rescues</p>
-    </div>
-    <div class="impact-item">
-      <h3>500+</h3>
-      <p>Sterilizations</p>
-    </div>
-    <div class="impact-item">
-      <h3>1500+</h3>
-      <p>Vaccinations</p>
-    </div>
-  </div>
-</section>
+<!-- 🌟 Impact Stats Banner -->
+	<section class="impact-banner" data-aos="fade-up">
+		<div class="impact-container">
+			<div class="impact-item">
+				<h3>300+</h3>
+				<p>Rescues</p>
+			</div>
+			<div class="impact-item">
+				<h3>500+</h3>
+				<p>Sterilizations</p>
+			</div>
+			<div class="impact-item">
+				<h3>1500+</h3>
+				<p>Vaccinations</p>
+			</div>
+		</div>
+	</section>
 
 
-  <!-- 2️⃣ Meet the Founder -->
-  <section class="founder-section" data-aos="fade-up">
-    <h2>Meet the Founder</h2>
-    <div class="founder-content">
-      <img src="assets/arushi.jpeg" alt="Arushi Bhattacharya" />
-      <div class="founder-text">
-        <h3>Arushi Bhattacharya</h3>
-        <p>Ahimsa Fellow, passionate advocate for animal welfare, and the heart behind Paws and Planet.</p>
-      </div>
-    </div>
-  </section>
+<!-- 2️⃣ Meet the Founder -->
+	<section class="founder-section" data-aos="fade-up">
+		<h2>Meet the Founder</h2>
+		<div class="founder-card">
+			<img src="assets/arushi.jpeg" alt="Arushi Bhattacharya" />
+			<div class="founder-bio">
+				<h3>Arushi Bhattacharya</h3>
+				<p>Ahimsa Fellow, passionate advocate for animal welfare, and the heart behind Paws and Planet — she believes no change is made alone, and every pawprint forward is a shared journey.</p>
+			</div>
+			<blockquote class="founder-quote">
+				I am nothing without my team
+			</blockquote>
+		</div>
+	</section>
 
-  <!-- 3️⃣ Allies Section -->
-<section class="allies-section" data-aos="fade-up">
-  <h2>Our Allies</h2>
-  <p class="allies-subtitle">We proudly collaborate with organizations that share our vision for a compassionate world.</p>
-  <div class="allies-logos">
-    <a href="https://www.peopleforanimalsindia.org" target="_blank">
-      <img src="assets/logos/pfa.png" alt="People for Animals Logo" />
-    </a>
-    <a href="https://ashari.org" target="_blank">
-      <img src="assets/logos/ashari.png" alt="Ashari Logo" />
-    </a>
-  </div>
-</section>
+<!-- 4️⃣ Volunteer Section: Grouped by Role -->
+	<section class="volunteer-section" data-aos="fade-up">
+		<h2>The People Behind Paws and Planet</h2>
+		<!-- Field Coordinators -->
+			<h3 class="volunteer-section-title">Field Coordinators</h3>
+				<div class="volunteer-slider">
+					<!-- Tapoti -->
+					<div class="volunteer-card">
+						<img src="assets/volunteers/tapoti.jpg" alt="Tapoti Deb">
+						<h3>Tapoti Deb</h3>
+						<p class="volunteer-role">Prime Rescue & ABC Coordinator</p>
+						<p>Tapoti is our Prime Coordinator for rescues and Animal Birth Control (ABC). With a background in theatre and a passion for psychology, she brings empathy and leadership to every mission.</p>
+					</div>
+					<!-- Nilanjana -->
+					<div class="volunteer-card">
+						<img src="assets/volunteers/nilanjana.jpg" alt="Nilanjana Sen Gupta">
+						<h3>Nilanjana Sen Gupta</h3>
+						<p class="volunteer-role">Cat Sterilization Coordinator</p>
+						<p>Nilanjana manages and coordinates cat sterilizations with care and precision. Her organizational skills help streamline our ABC efforts across the city.</p>
+					</div>
+					<!-- Aparna -->
+					<div class="volunteer-card">
+						<img src="assets/volunteers/aparna.jpg" alt="Aparna Shaw">
+						<h3>Aparna Shaw</h3>
+						<p class="volunteer-role">Rescue & ABC Volunteer</p>
+						<p>Aparna balances home, dance, and rescue work with heart. She leads ABC and rescue operations in Babu Bazar and Khidirpur, giving her all to the animals she loves.</p>
+					</div>
+					<!-- Mohiuddin -->
+					<div class="volunteer-card">
+						<img src="assets/volunteers/mohiuddin.jpg" alt="Mohammad Mohiuddin">
+						<h3>Mohammad Mohiuddin</h3>
+						<p class="volunteer-role">Rescue & ABC Volunteer</p>
+						<p>Mohiuddin actively leads ABC pickups and rescue missions in the Khidirpur and Watgunge areas. He’s known for his swift action and steady presence in the field.</p>
+					</div>
+					<!-- Sahana -->
+					<div class="volunteer-card">
+						<img src="assets/volunteers/sahana.jpg" alt="Sahana Parveen">
+						<h3>Sahana Parveen</h3>
+						<p class="volunteer-role">Rescue & Welfare Volunteer</p>
+						<p>Though she works full-time in a private company, Sahana’s heart beats for animal welfare. She dedicates her time to rescue and care work with deep commitment and compassion.</p>
+					</div>
+				</div>
+		<!-- Vision & Support Team -->
+			<h3 class="volunteer-section-title">Vision & Support Team</h3>
+				<div class="volunteer-slider">
+					<!-- Ritwik -->
+					<div class="volunteer-card">
+						<img src="assets/volunteers/ritwik.jpg" alt="Ritwik Chakraborty">
+						<h3>Ritwik Chakraborty</h3>
+						<p class="volunteer-role">Graphic Designer & Video Editor</p>
+						<p>Ritwik supports Paws and Planet with video editing, poster design, and — as he puts it — a good dose of moral support. His creative flair helps us share our message visually and vibrantly.</p>
+					</div>
+					<!-- Avik -->
+					<div class="volunteer-card">
+						<img src="assets/volunteers/avik.jpg" alt="Avik Chakraborty">
+						<h3>Avik Chakraborty</h3>
+						<p class="volunteer-role">2D Animator & Artist</p>
+						<p>Avik brings stories to life through motion and color. At Paws and Planet, he contributes to visual storytelling through posters and creative art, blending traditional artistry with digital design.</p>
+					</div>
+					<!-- Avi -->
+					<div class="volunteer-card">
+						<img src="assets/volunteers/avi.jpg" alt="Avishree Roy">
+						<h3>Avishree Roy</h3>
+						<p class="volunteer-role">Tech Lead & Long-Time Co-Conspirator</p>
+						<p>From brainstorming rescue missions over chai to building out digital systems, she’s been part of Paws and Planet since the beginning. She handles the tech and coordination side of things — quietly making sure the mission stays on track.</p>
+					</div>
+				</div>
+	</section>
+
+<!-- 3️⃣ Allies Section -->
+	<section class="allies-section" data-aos="fade-up">
+		<h2>Our Allies</h2>
+		<p class="allies-subtitle">We proudly collaborate with organizations that share our vision for a compassionate world.</p>
+		<div class="allies-logos">
+			<a href="https://www.peopleforanimalsindia.org/news/detals/81" target="_blank">
+				<img src="assets/logos/pfaashari.png" alt="People for Animals Kolkata Logo" />
+			</a>
+			<a href="https://www.telegraphindia.com/edugraph/campus/jadavpur-university-animals-organisation-takes-care-of-dogs-and-cats-on-and-around-campus/cid/1843817" target="_blank">
+				<img src="assets/logos/JUAWC.png" alt="JUAWC Logo" />
+			</a>
+		</div>
+	</section>
+
+<!-- 🧭 Mission & Values -->
+	<section class="mission-values-section" data-aos="fade-up">
+		<h2>Our Mission & Values</h2>
+		<p class="mission-text">At Paws and Planet, our mission is to protect and advocate for all animals — through rescue, care, education, and community engagement.</p>
+		<div class="values-grid">
+			<div class="value-item">
+				<img src="assets/icons/compassion.png" alt="Compassion Icon" />
+				<h4>Compassion</h4>
+				<p>Every life matters — we treat each animal with love and dignity.</p>
+			</div>
+			<div class="value-item">
+				<img src="assets/icons/community.png" alt="Community Icon" />
+				<h4>Community</h4>
+				<p>We build bridges between people, animals, and the planet.</p>
+			</div>
+			<div class="value-item">
+				<img src="assets/icons/commitment.png" alt="Commitment Icon" />
+				<h4>Commitment</h4>
+				<p>We’re here for the long haul — from rescue to recovery to advocacy.</p>
+			</div>
+		</div>
+	</section>
 
 
-  <!-- 4️⃣ Volunteer Carousel (placeholder) -->
-  <section class="volunteer-section" data-aos="fade-up">
-    <h2>The People Behind Paws and Planet</h2>
-    <div class="volunteer-carousel">
-      <!-- Placeholder cards -->
-      <div class="volunteer-card">
-        <img src="assets/volunteer1.jpeg" alt="Volunteer 1" />
-        <h4>Priya Singh</h4>
-        <p>Field Volunteer</p>
-      </div>
-      <div class="volunteer-card">
-        <img src="assets/volunteer2.jpeg" alt="Volunteer 2" />
-        <h4>Ravi Das</h4>
-        <p>Medical Support</p>
-      </div>
-      <!-- Add more as needed -->
-    </div>
-  </section>
+<!-- Footer (reuse) -->
+	<footer class="site-footer">
+		<div class="footer-content">
+			<div class="footer-left">
+				<h3>Voices of the Unheard</h3>
+				<p>&copy; 2025 Paws and Planet. All rights reserved.</p>
+			</div>
 
-	<!-- 🧭 Mission & Values -->
-<section class="mission-values-section" data-aos="fade-up">
-  <h2>Our Mission & Values</h2>
-  <p class="mission-text">At Paws and Planet, our mission is to protect and advocate for all animals — through rescue, care, education, and community engagement.</p>
+			<div class="footer-center">
+				<h4>Quick Links</h4>
+				<ul class="footer-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="get-involved.html">Get Involved</a></li>
+					<li><a href="donate.html">Donate</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="underc.html">News</a></li>
+				</ul>
+			</div>
 
-  <div class="values-grid">
-    <div class="value-item">
-      <img src="assets/icons/compassion.svg" alt="Compassion Icon" />
-      <h4>Compassion</h4>
-      <p>Every life matters — we treat each animal with love and dignity.</p>
-    </div>
-    <div class="value-item">
-      <img src="assets/icons/community.svg" alt="Community Icon" />
-      <h4>Community</h4>
-      <p>We build bridges between people, animals, and the planet.</p>
-    </div>
-    <div class="value-item">
-      <img src="assets/icons/commitment.svg" alt="Commitment Icon" />
-      <h4>Commitment</h4>
-      <p>We’re here for the long haul — from rescue to recovery to advocacy.</p>
-    </div>
-  </div>
-</section>
+			<div class="footer-right">
+				<h4>Connect</h4>
+					<div class="footer-socials">
+						<a href="https://instagram.com/paws_and_planet_pnrf" target="_blank">
+							<img src="assets/icons/instagram.png" alt="Instagram" />
+						</a>
+						<a href="https://wa.me/919903273060?text=Hi%20there!%20I%20came%20across%20Paws%20and%20Planet%20and%20would%20love%20to%20know%20more" target="_blank">
+							<img src="assets/icons/whatsapp.png" alt="WhatsApp" />
+						</a>
+						<a href="https://www.youtube.com/@plantneuterrepeatfoundatio3276" target="_blank">
+							<img src="assets/icons/youtube.png" alt="YouTube" />
+						</a>
+					</div>
+			</div>
+		</div>
+	</footer>
 
-  </section>
+<!-- AOS & JS -->
+	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+		<script>
+			AOS.init({ duration: 1000, once: true });
+		</script>
+	<script src="js/main.js"></script>
 
-  <!-- Footer (reuse) -->
-  <footer class="site-footer">
-    <div class="footer-content">
-      <div class="footer-left">
-        <h3>Voices of the Unheard</h3>
-        <p>&copy; 2025 Paws and Planet. All rights reserved.</p>
-      </div>
-
-      <div class="footer-center">
-        <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="get-involved.html">Get Involved</a></li>
-          <li><a href="donate.html">Donate</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="news.html">News</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-right">
-        <h4>Connect</h4>
-        <div class="footer-socials">
-          <a href="https://instagram.com/paws_and_planet_pnrf" target="_blank">
-            <img src="assets/icons/instagram.svg" alt="Instagram" />
-          </a>
-          <a href="https://wa.me/YOUR_NUMBER" target="_blank">
-            <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
-          </a>
-          <a href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank">
-            <img src="assets/icons/youtube.svg" alt="YouTube" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- AOS & JS -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
-  <script src="js/main.js"></script>
 </body>
 </html>

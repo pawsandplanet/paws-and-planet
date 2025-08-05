@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | Paws and Planet</title>
+  <title>Donate | Paws and Planet</title>
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
     <div class="navbar-links">
       <a href="about.html">About</a>
       <a href="get-involved.html">Get Involved</a>
-      <a href="news.html">News</a>
+      <a href="underc.html">News</a>
       <a href="contact.html">Contact</a>
     </div>
   </div>
@@ -81,37 +81,55 @@
   <h2 data-aos="fade-up">Ways to Donate</h2>
   <div class="donation-cards" data-aos="fade-up" data-aos-delay="100">
     
-    <div class="donation-card">
-      <img src="assets/icons/upi.svg" alt="UPI Icon">
-      <h3>Donate via UPI</h3>
-      <p>Scan the QR or use UPI ID below to contribute directly.</p>
-      <img src="assets/qr-code.png" alt="UPI QR Code" class="qr-image" />
-      <code>pawsandplanet@upi</code>
-    </div>
+<div class="donation-card">
+  <img src="assets/icons/upi.png" alt="UPI Icon">
+  <h3>Donate via UPI</h3>
+  <p style="margin-top: 1rem;"><button class="btn btn-outline" onclick="openQROverlay()">View QR code</button></p>
+  <p><strong>Merchant ID:</strong> <code>KOLKATA PLANT NEUTER RE,KOLKATA</code></p>
+</div>
 
+<!-- Donate via Razorpay
+<div class="donation-card">
+  <img src="assets/icons/upi.svg" alt="UPI Icon">
+  <h3>Donate Online</h3>
+  <p>Use UPI, debit/credit card, or net banking — it’s fast, secure, and mobile-friendly.</p>
+  <a href="https://rzp.io/l/pawsandplanet" class="btn btn-green" target="_blank">Donate Now</a>
+  
+  <p style="margin-top: 1rem;">
+    Prefer bank transfer? <a href="#" onclick="toggleBank()">Click here for details</a>
+  </p>
+  
+  <div id="bankDetails" style="display: none; margin-top: 1rem; border-top: 1px solid #ccc; padding-top: 1rem;">
+    <ul class="bank-details">
+      <li><strong>Account Name:</strong> Paws and Planet Foundation</li>
+      <li><strong>Account Number:</strong> 1234567890</li>
+      <li><strong>IFSC Code:</strong> ABCD0123456</li>
+      <li><strong>Bank:</strong> Example Bank</li>
+    </ul>
+    <p><small>📩 After transfer, email us your name, PAN, and donation details for a receipt.</small></p>
+  </div>
+</div> -->
     <div class="donation-card">
-      <img src="assets/icons/bank.svg" alt="Bank Transfer Icon">
+      <img src="assets/icons/transfer.png" alt="Bank Transfer Icon">
       <h3>Bank Transfer</h3>
       <p>Make a direct bank donation using the account details provided below.</p>
-      <ul class="bank-details">
-        <li><strong>Account Name:</strong> Paws and Planet Foundation</li>
-        <li><strong>Account Number:</strong> 1234567890</li>
-        <li><strong>IFSC Code:</strong> ABCD0123456</li>
-        <li><strong>Bank:</strong> Example Bank</li>
-      </ul>
+	  <p><strong>Account Name:</strong> Kolkata Plant Neuter Repeat Foundation</p>
+      <p><strong>Account Number:</strong> 921010034916280</p>
+      <p><strong>IFSC Code:</strong> UTIB0000253</p>
+      <p><strong>Bank:</strong> Axis Bank</p>
     </div>
 
     <div class="donation-card">
-      <img src="assets/icons/materials.svg" alt="In Kind Icon">
+      <img src="assets/icons/kind.png" alt="In Kind Icon">
       <h3>In-Kind Donations</h3>
       <p>Donate food, medicines, blankets, or pet supplies. We’re always in need!</p>
-      <a href="contact.html#contact-form-section" class="btn btn-outline">Reach Out</a>
+      <p style="margin-top: 3rem;"><a href="contact.html#contact-form-section" class="btn btn-outline">Reach Out</a></p>
     </div>
 
   </div>
 </section>
 
-<!--Legal Note + CTA-->
+<!--Legal Note + CTA--
 <section class="donation-legal-cta" data-aos="fade-up">
   <div class="legal-text">
     <h3>Tax Deductible Contributions</h3>
@@ -144,7 +162,7 @@
     <div class="faq-item">
       <button class ="faq-question"><h4>How is my donation used?</h4></button>
       <div class="faq-answer">
-	  <p>We spend over 90% of funds directly on rescues, sterilizations, vaccinations, emergency care, and advocacy efforts.</p>
+	  <p>We spend 100% of funds directly on rescues, sterilizations, vaccinations, emergency care, and advocacy efforts.</p>
     </div>
 	</div>
 
@@ -174,23 +192,23 @@
           <li><a href="get-involved.html">Get Involved</a></li>
           <li><a href="donate.html">Donate</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="news.html">News</a></li>
+          <li><a href="underc.html">News</a></li>
         </ul>
       </div>
 
       <div class="footer-right">
-        <h4>Connect</h4>
-        <div class="footer-socials">
-          <a href="https://instagram.com/paws_and_planet_pnrf" target="_blank">
-            <img src="assets/icons/instagram.svg" alt="Instagram" />
-          </a>
-          <a href="https://wa.me/YOUR_NUMBER" target="_blank">
-            <img src="assets/icons/whatsapp.svg" alt="WhatsApp" />
-          </a>
-          <a href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank">
-            <img src="assets/icons/youtube.svg" alt="YouTube" />
-          </a>
-        </div>
+      <h4>Connect</h4>
+      <div class="footer-socials">
+        <a href="https://instagram.com/paws_and_planet_pnrf" target="_blank">
+          <img src="assets/icons/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://wa.me/919903273060?text=Hi%20there!%20I%20came%20across%20Paws%20and%20Planet%20and%20would%20love%20to%20know%20more" target="_blank">
+          <img src="assets/icons/whatsapp.png" alt="WhatsApp" />
+        </a>
+        <a href="https://www.youtube.com/@plantneuterrepeatfoundatio3276" target="_blank">
+          <img src="assets/icons/youtube.png" alt="YouTube" />
+        </a>
+      </div>
       </div>
     </div>
   </footer>
@@ -201,5 +219,15 @@
     AOS.init({ duration: 1000, once: true });
   </script>
   <script src="js/main.js"></script>
+  <!-- Full Page QR Code Overlay -->
+<div id="qrOverlay" class="overlay" style="display: none;">
+  <div class="overlay-content">
+    <span class="close-btn" onclick="closeQROverlay()">×</span>
+    <h3>Scan to Donate</h3>
+    <img src="assets/QRIMAGE.jpg" alt="Scan this QR to donate to Paws and Planet" class="qr-large" />
+    <p class="qr-tip">📲 Use GPay, PhonePe, Paytm, or any UPI app. On mobile, long press to save and upload from your gallery in your UPI app.</p>
+  </div>
+</div>
+
 </body>
 </html>

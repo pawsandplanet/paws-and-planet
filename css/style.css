@@ -298,6 +298,20 @@ button {
   background-color: #3E2723;
 }
 
+.reel-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .reel-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
 /*How can you Help Section*/
 .help-section {
   text-align: center;
@@ -772,13 +786,24 @@ button {
   .site-footer {
     padding: 40px 20px;
   }
+    .origin-image.vertical-feature {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .origin-container {
+    flex-direction: column;
+  }
+
 }
 
 
 
-/* ===== About Page Styles ===== */
+/* ====================
+   About Page Styles
+==================== */
 
-/* Origin Section */
+/* ========== Origin Section ========== */
 .origin-section {
   padding: 60px 20px;
   background: var(--white);
@@ -804,20 +829,34 @@ button {
   line-height: 1.6;
 }
 
-.origin-image {
-  flex: 1;
-  min-width: 300px;
+blockquote {
+  font-style: italic;
+  color: var(--brown);
+  margin: 1em 0;
+  padding-left: 1.2em;
+  border-left: 4px solid var(--green);
 }
 
-.origin-image img {
+.origin-image.vertical-feature {
+  flex: 0 0 auto;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.origin-image.vertical-feature img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
   border-radius: 12px;
-  box-shadow: var(--shadow-light);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/*Impact Banner*/
+/* ========== Impact Banner ========== */
 .impact-banner {
-  background-color: var(--bg-light); /* soft yellow from your palette */
+  background-color: var(--bg-light);
   padding: 40px 20px;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
@@ -832,7 +871,7 @@ button {
 }
 
 .impact-item {
-  background-color: #ffffff;
+  background: var(--white);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   border-radius: 16px;
   padding: 20px 30px;
@@ -846,54 +885,71 @@ button {
 
 .impact-item h3 {
   font-size: 2.5rem;
-  color: #00693C;
+  color: var(--green);
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .impact-item p {
   font-size: 1rem;
-  color: #3E2723;
+  color: var(--brown);
   margin: 0;
 }
 
-
-/* Founder Section */
+/* ========== Founder Section ========== */
 .founder-section {
   padding: 60px 20px;
-  background-color: #ffffff;
+  background: var(--white);
   text-align: center;
 }
-
-.founder-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+.founder-card {
   max-width: 700px;
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-.founder-content img {
-  width: 180px;
+.founder-card img {
+  width: 100%;
+  max-width: 150px;
   border-radius: 50%;
-  box-shadow: var(--shadow-light);
+  object-fit: cover;
+  margin-bottom: 0.8rem;
 }
 
-.founder-text h3 {
-  font-size: 1.4rem;
-  margin: 10px 0 5px;
-  color: var(--brown);
-}
-
-.founder-text p {
+.founder-bio {
   font-size: 1rem;
-  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #3E2723;
 }
 
-/* Allies Section */
+.founder-quote {
+  position: relative;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3E2723;
+  background-color: #fff8f0;
+  padding: 1.5rem 2rem;
+  border-left: 4px solid #00693C;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: inline-block;
+}
+
+.founder-quote::before {
+  content: "“";
+  font-size: 3rem;
+  color: #00693C;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+/* ========== Allies Section ========== */
 .allies-section {
-  background-color: #fefefe;
+  background: #fefefe;
   text-align: center;
   padding: 60px 20px;
 }
@@ -901,14 +957,14 @@ button {
 .allies-section h2 {
   font-family: 'Coustard', serif;
   font-size: 2rem;
-  color: #00693C;
+  color: var(--green);
   margin-bottom: 10px;
 }
 
 .allies-subtitle {
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
-  color: #3E2723;
+  color: var(--brown);
   margin-bottom: 30px;
 }
 
@@ -921,9 +977,11 @@ button {
 }
 
 .allies-logos img {
-  max-height: 60px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  height: 150px;
+  max-width: 100%;
+  object-fit: contain;
   filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .allies-logos img:hover {
@@ -931,45 +989,69 @@ button {
   filter: grayscale(0%);
 }
 
+/* === Volunteer Carousel Style (Universal) === */
 
-/* Volunteer Section */
 .volunteer-section {
-  padding: 60px 20px;
-  background: var(--white);
+  padding: 40px 20px;
+  background-color: #f8f8f8;
 }
 
-.volunteer-carousel {
+.volunteer-section h2 {
+  font-size: 2rem;
+  color: var(--green);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.volunteer-slider {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 1.5rem;
-  padding-bottom: 10px;
   scroll-behavior: smooth;
+  gap: 1.5rem;
+  padding: 10px 20px;
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  justify-content: flex-start;
+}
+
+.volunteer-slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .volunteer-card {
-  flex: 0 0 250px;
-  scroll-snap-align: center;
-  background-color: white;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  flex: 0 0 80%;
+  max-width: 400px;
+  min-width: 280px;
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
 }
 
-.volunteer-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 15px;
+.volunteer-card:hover {
+  transform: scale(1.03);
 }
 
+.volunteer-card img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+}
+
+.volunteer-card h3,
 .volunteer-card h4 {
   margin: 0;
   font-size: 1.1rem;
-  color: #3E2723;
+  color: var(--brown);
 }
 
 .volunteer-card p {
@@ -977,23 +1059,14 @@ button {
   color: #555;
 }
 
-.volunteer-card:hover {
-  transform: scale(1.03);
+.volunteer-role {
+  font-style: italic;
+  font-weight: 500;
+  color: #777;
+  margin: 0.4rem 0;
 }
 
-.volunteer-carousel::-webkit-scrollbar {
-  height: 8px;
-}
-.volunteer-carousel::-webkit-scrollbar-track {
-  background: #f0f0f0;
-}
-.volunteer-carousel::-webkit-scrollbar-thumb {
-  background: #bbb;
-  border-radius: 4px;
-}
-
-
-/* Mission Section */
+/* ========== Mission Section ========== */
 .mission-section {
   padding: 60px 20px;
   background-color: var(--bg-light);
@@ -1008,8 +1081,9 @@ button {
   color: #444;
 }
 
+/* ========== Mission Values ========== */
 .mission-values-section {
-  background-color: #ffffff;
+  background-color: var(--bg-light);
   padding: 60px 20px;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
@@ -1018,7 +1092,7 @@ button {
 .mission-values-section h2 {
   font-family: 'Coustard', serif;
   font-size: 2rem;
-  color: #00693C;
+  color: var(--green);
   margin-bottom: 1rem;
 }
 
@@ -1026,7 +1100,7 @@ button {
   max-width: 700px;
   margin: 0 auto 40px auto;
   font-size: 1rem;
-  color: #3E2723;
+  color: var(--brown);
 }
 
 .values-grid {
@@ -1037,7 +1111,7 @@ button {
 }
 
 .value-item {
-  background-color: #D6F9DD;
+  background: #fefefe;
   border-radius: 16px;
   padding: 20px;
   max-width: 250px;
@@ -1050,21 +1124,20 @@ button {
 }
 
 .value-item img {
-  width: 50px;
+  width: 120px;
   margin-bottom: 10px;
 }
 
 .value-item h4 {
   font-size: 1.2rem;
-  color: #00693C;
+  color: var(--green);
   margin-bottom: 8px;
 }
 
 .value-item p {
   font-size: 0.95rem;
-  color: #3E2723;
+  color: var(--brown);
 }
-
 
 /* ===== About Page Styles End ===== */
 
@@ -1207,7 +1280,7 @@ button {
 /*CTA*/
 .donation-cta {
   width: 100%;
-  background-color: #D6F9DD;
+  background-color: var(--green);
   padding: 60px 20px;
   font-family: 'Quicksand', sans-serif;
   box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.04);
@@ -1219,13 +1292,13 @@ button {
 .donation-cta h2 {
   font-family: 'Coustard', serif;
   font-size: 2rem;
-  color: #00693C;
+  color: #fefefe;
   margin-bottom: 15px;
 }
 
 .donation-cta p {
   font-size: 1.05rem;
-  color: #444;
+  color: #fefefe;
   margin-bottom: 25px;
   max-width: 600px;
   margin-left: auto;
@@ -1233,8 +1306,8 @@ button {
 }
 
 .donation-cta .btn-green {
-  background-color: #00693C;
-  color: white;
+  background-color:#fbc02d;
+  color: var(--brown);
   padding: 12px 30px;
   border-radius: 25px;
   text-decoration: none;
@@ -1713,28 +1786,60 @@ button.btn-green:hover {
 }
 
 .donation-card img {
-  height: 50px;
-  margin-bottom: 15px;
+  height: 150px;
+  margin-bottom: 8px;
 }
 
 .qr-image {
-  height: 150px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
+  width: 220px; /* Try 220–300px */
+  height: auto;
+  margin-top: 1rem;
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* Full-page overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
-.bank-details {
-  text-align: left;
-  font-size: 0.95rem;
-  margin-top: 10px;
-  padding-left: 0;
-  list-style: none;
+/* Overlay content */
+.overlay-content {
+  background: #fff;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
 }
 
-.bank-details li {
-  margin-bottom: 6px;
+/* Large QR Image */
+.qr-large {
+  max-width: 100%;
+  height: 350px;
+  margin-top: 1rem;
 }
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+
 
 code {
   background-color: #f2f2f2;
@@ -1835,3 +1940,75 @@ code {
 
 
 /* ===== Donate Page Styles End ===== */
+
+/* ===== Why fostering Matters Styles ===== */
+
+.info-section {
+  background-color: #fdfaf6; /* warm beige or soft background */
+  padding: 60px 30px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.info-section h1 {
+  font-size: 2.5rem;
+  color: #00693C; /* your brand green */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info-section p {
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+}
+
+.info-buttons {
+  background-color: #D6F9DD; /* your preferred soft mint */
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.btn-green {
+  background-color: #00693C;
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-green:hover {
+  background-color: #3E2723; /* your hover brown */
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+/*underc*/
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #00693C;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
