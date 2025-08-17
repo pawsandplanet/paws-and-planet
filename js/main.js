@@ -111,3 +111,5 @@ function openQROverlay() {
   function closeQROverlay() {
     document.getElementById('qrOverlay').style.display = 'none';
   }
+  
+  
