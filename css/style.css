@@ -704,6 +704,11 @@ button {
   cursor: pointer;
   color: var(--brown);
   user-select: none;
+  position: relative;
+  top: auto;
+  right: auto;
+  margin-left: auto;
+  font-size: 1.5rem;
 }
 
 /* Show hamburger and hide nav on small screens */
@@ -734,15 +739,21 @@ button {
 }
 
 .mobile-menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   position: absolute;
-  top: 70px; /* just below the navbar */
+  top: 63px; /* just below the navbar */
+  left: 0;
   right: 0;
   width: 100%;
+  border-top:1px solid #ffffff;
   background-color: white;
   z-index: 999;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  
+  max-height:0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
 }
 
 .mobile-menu a {
@@ -761,6 +772,7 @@ button {
 
 .mobile-menu.active {
   display: flex;
+  max-height: 500px;
 }
 
 .donate-mobile {
@@ -793,22 +805,22 @@ button {
 /* 🔧 Mobile Responsiveness */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+	justify-content: flex-start;
   }
 
   .navbar-left {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+	display: flex;
     align-items: center;
+	margin-right: 1.5rem;
   }
 
-  .navbar-center {
-    width: 100%;
-    justify-content: flex-start;
-    margin-top: 1rem;
+  .navbar-right {
+	  display: flex;
+	  align-items: center;
+	  margin-left: 0.4rem;
+	  margin-right: 0.2rem;
   }
 
   .navbar-links {
@@ -818,8 +830,11 @@ button {
   }
 
   .donate-button {
-    margin-left: auto;
-    margin-top: 1rem;
+    margin-left: 0;
+    margin-top: 0;
+	font-size: 0.8rem;
+	padding: 0.4rem 0.8rem;
+	border-radius: 8px;
   }
 
   .hero-content {
