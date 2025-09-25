@@ -303,11 +303,20 @@
   text-align: left;
 }
 
-
-/* Ensure Instagram embeds are responsive */
-.media-card blockquote {
-  width: 100% !important;
+/* Add this to force the Instagram iframe to be responsive */
+.media-card .instagram-media iframe {
+  width: 100% !important; /* Force the iframe to fill its container */
+  min-width: 100% !important; /* Override Instagram's inline min-width */
 }
+
+/* Optional: Add a max-width to the container on mobile */
+@media (max-width: 480px) {
+  .media-card {
+    max-width: 320px; /* Prevent it from becoming too wide on mobile */
+    margin: 0 auto;
+  }
+}
+
 
 @media (max-width: 768px) {
   #projects, #articles, #media {

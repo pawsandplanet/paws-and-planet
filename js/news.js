@@ -51,3 +51,16 @@ window.addEventListener('scroll', updateActiveNav);
       donorLink.style.display = 'none';
     }
   });
+
+  //Instagram Embed
+    window.addEventListener('load', function() {
+    // Find all Instagram embeds on the page
+    const allInstagramIframes = document.querySelectorAll('.instagram-media iframe');
+
+    // Loop through them and remove the min-width style
+    allInstagramIframes.forEach(iframe => {
+      if (iframe.style.minWidth) {
+        iframe.style.minWidth = '100%';
+      }
+    });
+  });
