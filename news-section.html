@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paws and Planet</title>
+
+  <!-- Performance: Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ <!-- Google Fonts: Monteserrat (headings) & Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/news-section-style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+</head>
+
+<body>
+<div class="page-transition"></div>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="main.html">
+            <img src="assets/logo.png" alt="Paws & Planet Logo" style="height: 50px;"/ >
+        </a>
+    </div>
+  
+<!---Hamburger-->
+<button class="hamburger" id="hamburger" aria-label="Open navigation menu">&#9776;</button>
+
+<div class="navbar-center">
+    <div class="navbar-links">
+        <a href="about-section.html">About</a>
+        <a href="volunteer-section.html">Get Involved</a>
+        <a href="news-section.html">News</a>
+        <a href="contact-section.html">Contact</a>
+    </div>
+</div>
+
+<div class="navbar-right">
+    <a href="donate-section.html" class="donate-button">Donate</a>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="main.html">Home</a>
+    <a href="about-section.html">About</a>
+    <a href="volunteer-section.html">Get Involved</a>
+    <a href="news-section.html">News</a>
+    <a href="contact-section.html">Contact</a>
+</div>
+</nav>
+
+<section class="news-hero" data-aos="fade-down">
+        <h1>Our News & Stories</h1>
+        <p>Updates, media mentions, and milestones from our journey</p>
+</section>
+
+<nav class="news-nav">
+  <a href="#projects">Projects</a>
+  <a href="#articles">Articles</a>
+  <a href="#media">Media</a>
+  <a id="donate-link" href="donate.html">Donate</a>
+</nav>
+
+
+<main class="news-container" data-aos="fade-left">
+<!-- Section 1: Projects -->
+<section id="projects">
+  <h2>Our Projects</h2>
+
+  <div class="projects-grid">
+    <article class="project-card">
+      <img src="assets/news/projects/abc-bishnupur.jpg" alt="Animal Birth Control Project in Bishnupur">
+      <h3>Animal Birth Control Project in Bishnupur</h3>
+      <p>A successful initiative by Paws and Planet - PNRF to manage free-roaming dogs...</p>
+      <a href="article-project-detail.html?id=abc-bishnupur">Read Project Story</a>
+    </article>
+
+    <article class="project-card">
+      <img src="assets/news/projects/covid-feeding.jpg" alt="Feeding street dogs during COVID-19">
+      <h3>Feeding Street Dogs in Non-Residential Areas during COVID-19</h3>
+      <p>How a youth-led NGO ensured that the city's stray dogs did not go hungry during the 2020 COVID-19 lockdown....</p>
+      <a href="article-project-detail.html?id=covid-feeding">Read Project Story</a>
+    </article>
+
+    <article class="project-card">
+      <img src="assets/news/projects/rescue-operations-Covid-19.jpg" alt="Rescue operations during COVID-19">
+      <h3>Rescue Operations during COVID-19</h3>
+      <p>When the world stood still in 2020, our mission didn't. This is the story of how...</p>
+      <a href="article-project-detail.html?id=rescue-operations-covid">Read Project Story</a>
+    </article>
+
+    <article class="project-card">
+      <img src="assets/news/projects/bird-rescue.jpg" alt="Bird rescue during climate disasters">
+      <h3>Bird Rescue during Amphan 2020</h3>
+      <p>In the storm's wake, our team found a new calling...</p>
+      <a href="article-project-detail.html?id=bird-rescue">Read Project Story</a>
+    </article>
+  </div>
+</section>
+
+<!-- Section 2: Articles -->
+<section id="articles">
+  <h2>Articles</h2>
+
+  <!-- Featured Article -->
+  <article class="featured-article">
+    <img src="assets/news/articles/ornamental-fishes.jpg" alt="Featured Story">
+    <div class="featured-content">
+      <h3>The Living Jewels of Galiff Street: A Story of Vibrant Trade and Hidden Suffering</h3>
+      <p class="meta">Published: Feb 15, 2025</p>
+      <p>Inside Kolkata's largest ornamental fish market, a thriving economy clashes with a deep crisis in animal welfare....</p>
+      <a href="article-project-detail.html?id=ornamental-fishes" class="btn-featured">Read More</a>
+    </div>
+  </article>
+
+  <!-- Article Grid -->
+  <div class="articles-grid">
+    <article class="news-card">
+      <img src="assets/news/articles/pig-husbandry.jpg" alt="Pig-husbandy-problems-wb">
+      <h3>Improving Pig Farming in West Bengal: A Call for Humane and Modern Practices</h3>
+      <p class="meta">Published: Jan 15, 2025</p>
+      <p>By aligning its outdated training manual with national standards for veterinary care and humane housing, the state....</p>
+      <a href="article-project-detail.html?id=pig-husbandry-wb" class="btn btn-arrow">Read More</a>
+    </article>
+
+    <article class="news-card">
+      <img src="assets/news/articles/poultry-farms-report.jpg" alt="Article 2">
+      <h3>Investigation Reveals Major Health and Environmental Risks at West Bengal Poultry Farms</h3>
+      <p class="meta">Published: Dec 13, 2025</p>
+      <p>A survey of 16 poultry farms in Bankura and Hooghly reveals shocking violations...</p>
+      <a href="article-project-detail.html?id=poultry-farms-report" class="btn btn-arrow">Read More</a>
+    </article>
+  </div>
+</section>
+
+<!-- Section 3: Media -->
+<section id="media">
+  <h2>In the Media</h2>
+  <div class="media-grid">
+    <!-- Instagram Post 1 -->
+    <div class="media-card">
+        <p class="media-caption">Supported content and messaging for June Malia’s speech on animal laws as featured on PFA PPF Instagram</p>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DHlUM4CTq_d/?hl=en" data-instgrm-version="14"></blockquote>
+    </div>
+    <!-- Instagram Post 2 -->
+    <div class="media-card">
+        <p class="media-caption">Supported communication and awareness campaigns on the Prevention of Cruelty to Animals (PCA) Amendment Bill, as highlighted by Bikash Ranjan Bhattacharya on PFA PPF Instagram.</p>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DFM-r2sps_T/?igsh=OTE1cWdsM3JndXFk" data-instgrm-version="14"></blockquote>
+    </div>
+    <!-- Instagram Post 3 -->
+    <div class="media-card">
+        <p class="media-caption">Assisted in shaping communication for Azad Kirti Jha's letter to the Prime Minister on Prevention of Cruelty to Animals (PCA) Amendment Bill highlighted on PFA PPF Instagram.</p>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DE6zG2dJOZW/?igsh=ODliNTNpam1zNTlz" data-instgrm-version="14"></blockquote>
+    </div>
+    
+    <!-- Add more media cards as needed -->
+  </div>
+</section>
+</main>
+
+<!--Footer -->
+<footer class="site-footer" data-aos="fade-up">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Voices of the Unheard</h3>
+            <p>&copy; 2025 Paws and Planet. All rights reserved.</p>
+        </div>
+
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about-section.html">About</a></li>
+                <li><a href="volunteer-section.html">Get Involved</a></li>
+                <li><a href="donate-section.html">Donate</a></li>
+                <li><a href="contact-section.html">Contact</a></li>
+                <li><a href="news-section.html">News</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <h4>Connect</h4>
+            <div class="footer-socials">
+                <a href="https://instagram.com/paws_and_planet_pnrf" target="_blank">
+                    <img src="assets/icons/instagram.png" alt="Instagram" />
+                </a>
+                <a href="https://wa.me/919903273060?text=Hi%20there!%20I%20came%20across%20Paws%20and%20Planet%20and%20would%20love%20to%20know%20more" target="_blank">
+                    <img src="assets/icons/whatsapp.png" alt="WhatsApp" />
+                </a>
+                <a href="https://www.youtube.com/@plantneuterrepeatfoundatio3276" target="_blank">
+                    <img src="assets/icons/youtube.png" alt="YouTube" />
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    });
+</script>
+<!-- JS -->
+<script src="js/global.js"></script>
+<script src="js/main.js"></script>
+<script src="js/news.js"></script>
+
+<!-- Instagram Embed Script -->
+<script async src="//www.instagram.com/embed.js"></script>
+
+</body>
+</html>

@@ -1,50 +1,67 @@
-# Paws and Planet – Official Website
+Paws and Planet Website
+This is the official website for Paws and Planet, a non-profit animal welfare organization dedicated to rescuing, protecting, and advocating for animals. The site is designed to share our story, showcase our projects, attract volunteers, and collect donations.
 
-A clean, responsive, and accessible website for **Paws and Planet**, an animal welfare NGO based in West Bengal. This site shares our mission, invites volunteers and donors, and spreads awareness through blog posts and news updates.
+Table of Contents
+Features
 
-## Features
+Technologies Used
 
-- Modern responsive design with custom color palette
-- Animated hero, counters, and cards using AOS
-- Modular structure: About, Donate, Get Involved, News, Contact pages
-- Mobile-friendly navigation with hamburger menu
-- Embedded YouTube video, social media links, and live Google Forms
-- Static site deployable via GitHub Pages or Netlify
+Project Structure
 
-## Built With
+Setup and Usage
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- [AOS - Animate On Scroll](https://michalsnik.github.io/aos/)
-- [Google Fonts – Coustard & Quicksand](https://fonts.google.com/)
-- [Swiper.js](https://swiperjs.com/) for responsive carousels
+Key Functionality
 
-## Live Site
+Features
+Fully Responsive Design: The layout adapts seamlessly to all screen sizes, from mobile phones to desktop monitors.
 
-[Visit pawsandplanet.org](https://pawsandplanet.netlify.app)  
+Engaging Animations: Subtle scroll animations powered by the AOS library to enhance user experience.
 
-## Contact
+Interactive Components: Includes custom carousels, animated number counters, and accordions for FAQs.
 
-For collaboration or questions, reach us at:  
-**pnr2eo@gmail.com**  
-[Instagram](https://instagram.com/paws_and_planet_pnrf)
+Dynamic Content System: A client-side "CMS" loads articles and project details dynamically from a JavaScript object, eliminating the need for a backend.
 
----
+Functional Contact Form: A working contact form that uses Netlify Functions for secure email submission.
 
-### Developer Notes
+Comprehensive Sections: Dedicated pages for our mission, news, ways to get involved, and donation information.
 
-This is a static HTML site with all pages manually styled and animated. Ideal for lightweight hosting on platforms like Netlify, GitHub Pages, or Vercel.
+Technologies Used
+HTML5: For the core structure and content.
 
----
+CSS3: For all styling, layouts (Flexbox/Grid), and animations.
 
-### Maintained By
+JavaScript (ES6): For all interactivity, dynamic content loading, and form handling.
 
-- **Arushi Bhattacharya** – Founder & Project Lead  
-- **Avishree Roy** – Tech Lead / Web Developer
+AOS (Animate On Scroll) Library: For scroll-triggered animations.
 
----
+Netlify: The contact form is configured to work with Netlify Functions.
 
-### License
+Project Structure
+The project is organized into a clean and maintainable structure:
 
-This project is open for public awareness and educational reuse. Please credit "Paws and Planet" when sharing or forking.
+/
+├── css/              # All CSS stylesheets
+│   ├── global.css
+│   ├── navbar.css
+│   ├── footer.css
+│   └── ... (page-specific styles)
+├── js/               # All JavaScript files
+│   ├── global.js
+│   ├── main.js
+│   ├── articles.js   # Client-side "database" for articles
+│   └── ... (page-specific scripts)
+├── assets/           # All images, logos, and icons
+└── *.html            # All HTML pages (main.html, about.html, etc.)
+Setup and Usage
+This is a static website and requires no complex setup. To run it locally:
+
+Clone or download the repository.
+
+Open the project folder in your code editor.
+
+Use a live server extension (like "Live Server" in VS Code) to launch the main.html file in your browser.
+
+Key Functionality
+Article/Project Pages: The article-project-detail.html page is a template. The article-project-details.js script reads the id from the URL (e.g., ?id=abc-bishnupur), finds the matching content in the articles.js file, and populates the page.
+
+Contact Form: The form in contact-section.html is handled by contact.js, which sends the data to a Netlify serverless function located at /.netlify/functions/sendmail.

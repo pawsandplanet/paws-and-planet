@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
- <!-- Google Fonts: Monteserrat (headings) & Inter (body) -->
+ <!-- Google Fonts: Montserrat (headings) & Inter (body) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- AOS Animation Library -->
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/donate-section-style.css"/>
+  <link rel="stylesheet" href="css/article-project-details-style.css"/>
 
   <!-- Favicon -->
   <link rel="icon" href="assets/logo.png" type="image/png" />
@@ -63,14 +63,27 @@
 </div>
 </nav>
 
-<section style="text-align: center; padding: 100px 20px; font-family: sans-serif;">
-  <div class="loader" style="margin: 0 auto 30px;"></div>
-  <h1 style="font-size: 3em; margin-bottom: 20px;">🚧 Page Under Construction</h1>
-  <p style="font-size: 1.2em; color: #555;">
-    We're working hard to bring this page to life. <br>
-    Check back soon!
-  </p>
+<!-- Hero Section -->
+<section class="detail-hero" data-aos="fade-down">
+  <h1 id="detail-title"></h1>
+  <p id="detail-subtitle"></p>
 </section>
+
+<!-- Content Section -->
+<main class="detail-content" data-aos="fade-up">
+  <div class="detail-meta">
+    <p><strong>Published:</strong> <span id="detail-date"></span></p>
+    <p><strong>Category:</strong> <span id="detail-category"></span></p>
+  </div>
+
+  <div class="detail-body">
+    <img id="detail-image" src="" alt="">
+    <div class="detail-text" id="detail-body"></div>
+  </div>
+  <div class="container">
+        <a href="news-section.html" class="btn btn-primary">Back to News</a>
+  </div> 
+</main>
 
 <!--Footer -->
 <footer class="site-footer" data-aos="fade-up">
@@ -109,12 +122,12 @@
     </div>
 </footer>
 
-<!-- AOS & JS -->
-	<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-		<script>
-			AOS.init({ duration: 1000, once: true });
-		</script>
-	<script src="js/main.js"></script>
-
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/articles.js"></script>
+<script src="js/article-project-details.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+</script>
 </body>
 </html>

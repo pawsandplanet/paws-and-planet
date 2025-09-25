@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paws and Planet</title>
+
+  <!-- Performance: Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ <!-- Google Fonts: Monteserrat (headings) & Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/contact-section-style.css"/>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+</head>
+
+<body>
+<div class="page-transition"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="main.html">
+            <img src="assets/logo.png" alt="Paws & Planet Logo" style="height: 50px;" />
+        </a>
+    </div>
+  
+<!---Hamburger-->
+<button class="hamburger" id="hamburger" aria-label="Open navigation menu">&#9776;</button>
+
+<div class="navbar-center">
+    <div class="navbar-links">
+        <a href="about-section.html">About</a>
+        <a href="volunteer-section.html">Get Involved</a>
+        <a href="news-section.html">News</a>
+        <a href="contact-section.html">Contact</a>
+    </div>
+</div>
+
+<div class="navbar-right">
+    <a href="donate-section.html" class="donate-button">Donate</a>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="main.html">Home</a>
+    <a href="about-section.html">About</a>
+    <a href="volunteer-section.html">Get Involved</a>
+    <a href="news-section.html">News</a>
+    <a href="contact-section.html">Contact</a>
+</div>
+</nav>
+
+
+<!--Hero Section-->
+<section class="contact-hero" data-aos="fade-down">
+    <h1>We’d Love to Hear From You!</h1>
+    <p>Whether you're looking to adopt, foster, volunteer or just say hi — drop us a message!</p>
+</section>
+
+<!--Contact Form-->
+<section class="contact-form-section" data-aos="fade-up">
+    <div class="contact-form-container">
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="Name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="Email" required />
+            </div>
+            <div class="form-group full">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-light" font="Quicksand">Send Message</button>
+        </form>
+        <p id="form-response" style="display: none;"></p>
+    </div>
+</section>
+
+<!--Contact Info Section-->
+<section class="contact-info-section" data-aos="fade-up">
+    <div class="contact-info-container">
+        <div class="map-box">
+            <iframe src="https://www.google.com/maps/d/embed?mid=11aMOaV3KMa3aQN9sfyQdg73Kt_uW_og&ehbc=2E312F" width="640" height="480"></iframe>
+        </div>
+        <div class="info-box">
+            <h3>Get in Touch</h3>
+            <p><strong>Email:</strong> pnr2eo@email.com</p>
+            <p><strong>Phone:</strong> +91 99032 73060</p>
+            <p><strong>Location:</strong> Kolkata, West Bengal, India</p>
+            <p><strong>Hours:</strong> Mon–Sat | 9:00 AM – 6:00 PM</p>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section" data-aos="fade-up">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-question">How can I volunteer?</button>
+            <div class="accordion-answer">
+                <p>You can volunteer by filling out our form on the Get Involved page. Remote volunteering options are available too!</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-question">Do you offer fostering support?</button>
+            <div class="accordion-answer">
+                <p>Yes! We provide guidance and veterinary support throughout the fostering period.</p>
+            </div>
+        </div>
+        <div class="accordion accordion-item">
+            <button class="accordion-question">Where do you operate?</button>
+            <div class="accordion accordion-answer">
+                <p>We're based in West Bengal but work with a wider network of allies like People for Animals and Ashari.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Social Section-->
+<section class="container" id="follow-us" data-aos="fade-up">
+    <h2>Say Hi!</h2>
+    <p>Want to learn more about what we do? Send us a Hi! on Social Media, we're always here to answer your queries.</p>
+    <div class="social-links" data-aos="fade-left">
+        <a href="https://instagram.com/paws_and_planet_pnrf" target="_blank" class="social-icon">
+            <img src="assets/icons/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://wa.me/919903273060?text=Hi%20there!%20I%20came%20across%20Paws%20and%20Planet%20and%20would%20love%20to%20know%20more" target="_blank" class="social-icon">
+            <img src="assets/icons/whatsapp.png" alt="WhatsApp" />
+        </a>
+        <a href="https://www.youtube.com/@plantneuterrepeatfoundatio3276" target="_blank" class="social-icon">
+            <img src="assets/icons/youtube.png" alt="YouTube" />
+        </a>
+    </div>
+</section>
+
+<!--Footer -->
+<footer class="site-footer" data-aos="fade-up">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Voices of the Unheard</h3>
+            <p>&copy; 2025 Paws and Planet. All rights reserved.</p>
+        </div>
+
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about-section.html">About</a></li>
+                <li><a href="volunteer-section.html">Get Involved</a></li>
+                <li><a href="donate-section.html">Donate</a></li>
+                <li><a href="contact-section.html">Contact</a></li>
+                <li><a href="news-section.html">News</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <h4>Connect</h4>
+            <div class="footer-socials">
+                <a href="https://instagram.com/paws_and_planet_pnrf" target="_blank">
+                    <img src="assets/icons/instagram.png" alt="Instagram" />
+                </a>
+                <a href="https://wa.me/919903273060?text=Hi%20there!%20I%20came%20across%20Paws%20and%20Planet%20and%20would%20love%20to%20know%20more" target="_blank">
+                    <img src="assets/icons/whatsapp.png" alt="WhatsApp" />
+                </a>
+                <a href="https://www.youtube.com/@plantneuterrepeatfoundatio3276" target="_blank">
+                    <img src="assets/icons/youtube.png" alt="YouTube" />
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--AoS and JS-->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 1000, once: true });</script>
+<script src="js/global.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

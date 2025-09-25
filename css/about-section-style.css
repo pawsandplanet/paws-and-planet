@@ -1,0 +1,466 @@
+.origin-section {
+  padding: 60px 20px;
+  background: var(--white);
+}
+
+.origin-section h1{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--green);
+  position: relative;
+  display: inline-block;
+}
+
+.origin-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.origin-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.origin-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+blockquote {
+  font-style: italic;
+  color: var(--brown);
+  margin: 1em 0;
+  padding-left: 1.2em;
+  border-left: 4px solid var(--green);
+}
+
+.origin-image.vertical-feature {
+  flex: 0 0 auto;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.origin-image.vertical-feature img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .origin-image.vertical-feature img {
+    display: none;
+  }
+
+}
+
+/* ========== Impact Banner ========== */
+.impact-banner {
+  background-color: var(--bg-light);
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.impact-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.impact-item {
+  background: var(--white);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  padding: 20px 30px;
+  min-width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.impact-item:hover {
+  transform: translateY(-5px);
+}
+
+.impact-item h3 {
+  font-size: 2.5rem;
+  color: var(--green);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.impact-item p {
+  font-size: 1rem;
+  color: var(--brown);
+  margin: 0;
+}
+
+/* ========== Founder Section ========== */
+.founder-section {
+  padding: 60px 20px;
+  background: var(--white);
+  text-align: center;
+}
+
+.founder-section h2{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--green);
+  position: relative;
+  display: inline-block;
+}
+
+
+.founder-card {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.founder-card h3 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--brown);
+}
+
+.founder-card img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+}
+
+.founder-bio {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #3E2723;
+}
+
+.founder-quote {
+  position: relative;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3E2723;
+  background-color: #fff8f0;
+  padding: 1.5rem 2rem;
+  border-left: 4px solid #00693C;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: inline-block;
+}
+
+.founder-quote::before {
+  content: "“";
+  font-size: 3rem;
+  color: #00693C;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+/* ========== Allies Section ========== */
+.allies-section {
+  background: #fefefe;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.allies-section h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--green);
+  position: relative;
+  display: inline-block;
+}
+
+.allies-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: var(--brown);
+  margin-bottom: 30px;
+}
+
+.allies-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.allies-logos img {
+  height: 150px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.allies-logos img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+/* =========================
+   Volunteer Section
+========================= */
+.volunteer-section {
+  background-color: var(--bg-light);
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
+}
+
+.volunteer-section h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--green);
+  position: relative;
+  display: inline-block;
+}
+
+.volunteer-section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--green);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.volunteer-tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.volunteer-section h3 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--brown);
+}
+
+
+/* Carousel Wrapper */
+.volunteer-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* Carousel Track with scroll-snap */
+.volunteer-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  cursor: grab;
+  user-select: none;
+  margin-bottom: 2rem;
+}
+
+/* Each card snaps */
+.volunteer-card {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 300px; /* fixed width */
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--shadow-light);
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.volunteer-card img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid var(--green);
+  object-fit: cover;
+}
+
+.volunteer-card h3 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--brown);
+}
+
+.volunteer-role {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--green);
+  margin: 6px 0 10px 0; /* top + bottom spacing */
+  display: block;
+  font-style: italic;
+}
+
+
+.volunteer-slider {
+  cursor: grab;
+  user-select: none;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+  .volunteer-card {
+    flex: 0 0 250px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .volunteer-card {
+    flex: 0 0 80%; /* nearly full width */
+    margin: 0 auto;
+  }
+}
+
+/* Carousel Arrows */
+.volunteer-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--green);
+  color: var(--white);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background 0.3s,opacity 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  opacity: 0;
+}
+
+
+.volunteer-arrow[style*="block"] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.volunteer-arrow:hover {
+  background: #004d2a; /* slightly darker green for hover */
+}
+
+.volunteer-arrow.left {
+  left: -5px;
+}
+
+.volunteer-arrow.right {
+  right: -5px;
+}
+
+@media (max-width: 600px) {
+  .volunteer-arrow.left { left: 5px; }
+  .volunteer-arrow.right { right: 5px; }
+}
+
+
+/* ========== Mission Section ========== */
+.mission-section {
+  padding: 60px 20px;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+
+.mission-section p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ========== Mission Values ========== */
+.mission-values-section {
+  background-color: var(--bg-light);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.mission-values-section h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--green);
+  position: relative;
+  display: inline-block;
+}
+
+.mission-values-section h4 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--brown);
+}
+
+.mission-text {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+  color: var(--brown);
+}
+
+.values-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.value-item {
+  background: #fefefe;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+}
+
+.value-item img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.value-item h4 {
+  font-size: 1.2rem;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+
+.value-item p {
+  font-size: 0.95rem;
+  color: var(--brown);
+}

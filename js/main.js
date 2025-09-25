@@ -1,28 +1,3 @@
-// Navbar shrink on scroll
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar");
-  if (window.scrollY > 50) {
-    navbar.classList.add("shrink");
-  } else {
-    navbar.classList.remove("shrink");
-  }
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Hamburger toggle
-  const hamburger = document.getElementById("hamburger");
-  const navMenu = document.getElementById("mobileMenu");
-  const navLinks = document.querySelectorAll(".navbar-links a");
-
-  hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-  });
-
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("active");
-    });
-  });
 
   // 🔢 Counter animation
   const counters = document.querySelectorAll(".counter-number");
@@ -56,60 +31,35 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.6 });
 
   counters.forEach(counter => observer.observe(counter));
-});
 
-//FAQ
-document.querySelectorAll('.faq-question').forEach(button => {
-  button.addEventListener('click', () => {
-    const answer = button.nextElementSibling;
-    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+
+//Carousel
+function initCarouselArrows(selector) {
+  const container = document.querySelector(selector);
+  if (!container) return;
+
+  const track = container.querySelector(".carousel-track");
+  const items = container.querySelectorAll(".carousel-item");
+  const prevBtn = container.querySelector(".carousel-arrow.left");
+  const nextBtn = container.querySelector(".carousel-arrow.right");
+
+  if (!track || items.length === 0) return;
+
+  const gap = parseInt(getComputedStyle(track).gap) || 0;
+  const itemWidth = items[0].offsetWidth + gap;
+
+  // Arrow navigation
+  nextBtn?.addEventListener("click", () => {
+    track.scrollBy({ left: itemWidth, behavior: "smooth" });
   });
-});
 
-
-//mail
-const form = document.getElementById("contact-form");
-const responseEl = document.getElementById("form-response");
-
-if (form) {
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const data = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value,
-    };
-
-    try {
-      const res = await fetch("/.netlify/functions/sendmail", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-
-      if (res.ok) {
-        responseEl.textContent = "Thanks! Your message was sent.";
-        responseEl.style.display = "block";
-        form.reset();
-      } else {
-        responseEl.textContent = "Oops! Something went wrong.";
-        responseEl.style.display = "block";
-      }
-    } catch (err) {
-      responseEl.textContent = "Network error. Please try again.";
-      responseEl.style.display = "block";
-    }
+  prevBtn?.addEventListener("click", () => {
+    track.scrollBy({ left: -itemWidth, behavior: "smooth" });
   });
 }
 
-//qr overlay
-function openQROverlay() {
-    document.getElementById('qrOverlay').style.display = 'flex';
-  }
+// Example: init homepage carousel
+document.addEventListener("DOMContentLoaded", () => {
+  initCarouselArrows(".carousel-container");
+});
 
-  function closeQROverlay() {
-    document.getElementById('qrOverlay').style.display = 'none';
-  }
-  
-  

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paws and Planet</title>
+
+  <!-- Performance: Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ <!-- Google Fonts: Monteserrat (headings) & Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main-style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+</head>
+
+<body>
+<div class="page-transition"></div>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-left">
+        <img src="assets/logo.png" alt="Paws & Planet Logo" style="height: 50px;" />
+    </div>
+  
+<!---Hamburger-->
+<button class="hamburger" id="hamburger" aria-label="Open navigation menu">&#9776;</button>
+
+<div class="navbar-center">
+    <div class="navbar-links">
+        <a href="about-section.html">About</a>
+        <a href="volunteer-section.html">Get Involved</a>
+        <a href="news-section.html">News</a>
+        <a href="contact-section.html">Contact</a>
+    </div>
+</div>
+
+<div class="navbar-right">
+    <a href="donate-section.html" class="donate-button">Donate</a>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="main.html">Home</a>
+    <a href="about-section.html">About</a>
+    <a href="volunteer-section.html">Get Involved</a>
+    <a href="news-section.html">News</a>
+    <a href="contact-section.html">Contact</a>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text" data-aos="fade-up">
+    <h1>Every life matters — <br><span class="highlight">feathers, hooves, fins & fur</span></h1>
+    <a href="#about-preview" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="300">Learn More</a>
+  </div>
+</section>
+
+
+<!---Fundraiser Section-->
+<!--Main Area-->
+<section class="fundraiser-section">
+    <div class="fundraiser-content">
+        <div class="fundraiser-text" data-aos="fade-up">
+            <h1>Support our Fundraiser</h1>
+            <p>Help us launch Kolkata's first free <span class="highlight">ambulance</span> for street animals</p>
+
+            <!-- Progress Bar -->
+            <div class="fundraiser-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 1.96%;"></div>
+                </div>
+                <p><strong>₹9,800</strong> raised of ₹5,00,000 goal</p>
+            </div>
+            <!--Fundraiser buttons-->
+            <div class="fundraiser-buttons">
+                <a href="https://www.ketto.org/fundraiser/help-us-launch-kolkatas-first-free-ambulance-service-for-street-animals" 
+                target="_blank" rel="noopener" class="btn btn-secondary" data-aos="zoom-in" data-aos-delay="100">Contribute Now</a>
+                <a href="fundraiser.html" class="btn btn-secondary" data-aos="zoom-in" data-aos-delay="150">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== About Preview Section ===== -->
+<section class="about-preview" id="about-preview">
+  <div class="container about-preview-grid">
+    <!-- Left Image -->
+    <div class="about-preview-image">
+      <img src="assets/about-preview.jpg" alt="Paws & Planet Team" />
+    </div>
+
+    <!-- Right Content -->
+    <div class="about-preview-content">
+      <h2>About Us</h2>
+      <p>
+        At <strong>Paws & Planet</strong>, we believe in compassion and action —
+        from rescuing animals to running sterilization projects, every effort is
+        aimed at building a kinder planet for all beings.
+      </p>
+
+      <!-- Highlight Cards -->
+      <div class="about-preview-cards">
+        <div class="preview-card">
+          <h3>🌍 Impact</h3>
+          <p>Over 100 vaccinations and sterilizations each month.</p>
+        </div>
+        <div class="preview-card">
+          <h3>📰 Media</h3>
+          <p>Featured in local and national news platforms.</p>
+        </div>
+        <div class="preview-card">
+          <h3>🤝 Community</h3>
+          <p>Powered by volunteers, in-kind donors and local veterinarians.</p>
+        </div>
+      </div>
+      <a href="about-section.html" class="btn btn-arrow">
+        Read Full Story <span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Counter Section -->
+<section class="counter-section" id="stats">
+    <h1 class="section-title" data-aos="fade-up">Our Impact</h1>
+    <div class="counters">
+        <div class="counter-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="counter-number" data-target="1500">0</div>
+            <p>Rescues</p>
+        </div>
+            <div class="counter-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="counter-number" data-target="10000">0</div>
+                <p>Sterilizations</p>
+            </div>
+        <div class="counter-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="counter-number" data-target="12000">0</div>
+            <p>Vaccinations</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Highlights Section ===== -->
+<section class="highlights" data-aos="fade-up" data-aos-delay="100">
+  <div class="container">
+    <h2>In the Spotlight</h2>
+    <div class="highlight-grid">
+      
+      <!-- Media Mention -->
+      <div class="highlight-item">
+        <h3>Media Mention</h3>
+        <img src="assets/news/June-Malia.jpg" alt="June-Malia speech">
+        <p><em>Supported content and messaging for June Malia’s speech as featured on <strong>PFA PPF Instagram</strong>.</em></p>
+        <a href="https://www.instagram.com/p/DHlUM4CTq_d/?hl=en" target="_blank" class="btn btn-arrow">View Highlight<span>→</span></a>
+      </div>
+
+      <!-- Featured Article -->
+      <div class="highlight-item">
+        <h3>Featured Article</h3>
+        <img src="assets/news/articles/ornamental-fishes.jpg" alt="Ornamental-Fish Welfare">
+        <p><em>The Living Jewels of Galiff Street: A Story of Vibrant Trade and Hidden Suffering</em></p>
+        <a href="article-project-detail.html?id=ornamental-fishes" class="btn btn-arrow">Read Article<span>→</span></a>
+      </div>
+
+      <!-- Project of Choice -->
+      <div class="highlight-item">
+        <h3>Project Spotlight</h3>
+        <img src="assets/news/projects/abc-bishnupur.jpg" alt="Bishnupur Project">
+        <p><em>A successful initiative by Paws and Planet - PNRF in Bishnupur, Bankura to manage free-roaming dogs through humane sterilisation and vaccination</em></p>
+        <a href="article-project-detail.html?id=abc-bishnupur" class="btn btn-arrow">Explore Project<span>→</span></a>
+      </div>
+    </div>
+    <div class="highlight-button">
+        <a href="news-section.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="200">Know more</a>
+    </div>
+  </div>
+</section>
+
+<!----What We Do -->
+<section class="section">
+    <h2 class="section-title" data-aos="fade-up">What We Do</h2>
+
+    <ul class="fancy-list" data-aos="fade-up" data-aos-delay="100">
+        <li>Rescue</li>
+        <li>Sterilize</li>
+        <li>Vaccinate</li>
+        <li>Advocate</li>
+    </ul>
+
+<!--Carousel-->
+<div class="carousel-container">
+    <button class="carousel-arrow left">&#10094;</button>
+    <div class="carousel-track">
+        <div class="carousel-item">
+            <img src="assets/Carousel1.jpg" alt="Winter Beds for Stray Dogs">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/Carousel2.jpg" alt="Rescue Work">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/Carousel3.jpg" alt="Cat with ear tip- indicating ABC">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/Carousel4.jpg" alt="Vaccinations">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/Carousel5.jpg" alt="Community Outreach">
+        </div>
+    </div>
+    <button class="carousel-arrow right">&#10095;</button>
+</div>
+
+
+<!-- 🌀 Featured Reels -->
+    <div class="reel-section" data-aos="fade-up" data-aos-delay="300">
+        <h3 style="text-align: center; margin-bottom: 0.5rem; margin-top: 2rem;">Featured Reels</h3>
+        <p style="text-align: center; margin-bottom: 1.5rem;">Real stories from the field — rescues, recoveries, and joyful reunions.</p>
+        <div class="reel-grid">
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DB4Eikoyjpu/" data-instgrm-version="14" style="margin: 0 auto;"></blockquote>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C2R9UKgp99c/" data-instgrm-version="14" style="margin: 0 auto;"></blockquote>
+            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C0TyaXNJm5L/" data-instgrm-version="14" style="margin: 0 auto;"></blockquote>
+        </div>
+    </div>
+
+    <a href="volunteer-section.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">Join Now</a>
+</section>
+
+<!-- How You Can Help -->
+<section class="help-section">
+    <h2>How You Can Help</h2>
+    <div class="help-cards">
+        <a href="donate-section.html" class="help-card">
+            <div class="help-card-content">
+                <img src="assets/Donate.png" alt="Donate Icon" class="logo-donate" />
+                <h3>Donate</h3>
+                <p>Your contribution helps us rescue, treat, and feed animals in need.</p>
+                <span class="hover-button">Go to Donate</span>
+            </div>
+        </a>
+
+        <a href="volunteer-section.html" class="help-card">
+            <div class="help-card-content">
+                <img src="assets/Volunteer.png" alt="Volunteer Icon" class="logo-large" />
+                <h3>Volunteer</h3>
+                <p>Join us on the ground or remotely to make a difference in animal lives.</p>
+                <span class="hover-button">Lend a Hand</span>
+            </div>
+        </a>
+
+        <a href="volunteer-section.html" class="help-card">
+            <div class="help-card-content">
+                <img src="assets/Foster.png" alt="Foster Icon" class="logo-large" />
+                <h3>Foster</h3>
+                <p>Give rescued animals temporary love and care until they find a forever home.</p>
+                <span class="hover-button">Become a Foster Carer</span>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!-- ===== Queries Section ===== -->
+<section class="queries">
+  <div class="container">
+    <h2>Have Questions?</h2>
+    <p>We’d love to hear from you. Get in touch with our team directly.</p>
+    <div class="queries-button">
+    <a href="contact-section.html" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Stay Connected Section -->
+<section class="social-section" id="follow-us">
+    <h2>🐾 Follow Us for Tails, Tales & Transformations!</h2>
+    <div class="social-container">
+    <!-- Embedded YouTube Video -->
+        <div class="video-wrapper" data-aos="fade-up">
+            <iframe width="635" height="360" src="https://www.youtube.com/embed/7-sat9E2UhI"
+            title="CRISIS OF CALCUTTA - Stray Animals | A 'Plant Neuter Repeat Foundation' Report | Help Animals India"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+            </iframe>
+        </div>
+
+    <!-- Icons + Button Block -->
+        <div class="social-actions">
+            <div class="social-links">
+                <a href="https://instagram.com/paws_and_planet_pnrf" target="_blank" class="social-icon instagram">
+                    <img src="assets/icons/instagram.png" alt="Instagram" />
+                </a>
+                <a href="https://wa.me/919903273060?text=Hi%20there!%20I%20came%20across%20Paws%20and%20Planet%20and%20would%20love%20to%20know%20more" target="_blank" class="social-icon whatsapp">
+                    <img src="assets/icons/whatsapp.png" alt="WhatsApp" />
+                </a>
+                <a href="https://www.youtube.com/@plantneuterrepeatfoundatio3276" target="_blank" class="social-icon youtube">
+                    <img src="assets/icons/youtube.png" alt="YouTube" />
+                </a>
+            </div>
+
+            <a href="volunteer-section.html" class="btn btn-green" style="margin-top: 0.75rem;">Get Involved Today</a>
+        </div>
+    </div>
+</section>
+
+<!--Footer -->
+<footer class="site-footer" data-aos="fade-up">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Voices of the Unheard</h3>
+            <p>&copy; 2025 Paws and Planet. All rights reserved.</p>
+        </div>
+
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about-section.html">About</a></li>
+                <li><a href="volunteer-section.html">Get Involved</a></li>
+                <li><a href="donate-section.html">Donate</a></li>
+                <li><a href="contact-section.html">Contact</a></li>
+                <li><a href="news-section.html">News</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <h4>Connect</h4>
+            <div class="footer-socials">
+                <a href="https://instagram.com/paws_and_planet_pnrf" target="_blank">
+                    <img src="assets/icons/instagram.png" alt="Instagram" />
+                </a>
+                <a href="https://wa.me/919903273060?text=Hi%20there!%20I%20came%20across%20Paws%20and%20Planet%20and%20would%20love%20to%20know%20more" target="_blank">
+                    <img src="assets/icons/whatsapp.png" alt="WhatsApp" />
+                </a>
+                <a href="https://www.youtube.com/@plantneuterrepeatfoundatio3276" target="_blank">
+                    <img src="assets/icons/youtube.png" alt="YouTube" />
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    });
+</script>
+<!-- JS -->
+<script src="js/global.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Instagram Embed Script -->
+<script async src="//www.instagram.com/embed.js"></script>
+
+</body>
+</html>
+
+

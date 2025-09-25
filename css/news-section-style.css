@@ -1,0 +1,323 @@
+.news-hero {
+  background-color: #D6F9DD;
+  text-align: center;
+  padding: 80px 20px 60px;
+  font-family: 'Inter', sans-serif;
+}
+
+.news-hero h1 {
+  color: #00693C;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.news-hero p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .news-hero {
+    padding: 60px 15px 40px;
+  }
+  .news-hero h1 {
+    font-size: 2rem;
+  }
+  .news-hero p {
+    font-size: 1rem;
+  }
+
+}
+
+.news-nav {
+  position: sticky;       /* sticky */
+  top: 0;                 /* distance from top when it sticks */
+  z-index: 999;           /* above content */
+  background: #f9f9f9;    /* required for sticky */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow-x: auto;       /* for mobile */
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .news-nav {
+    gap: 1rem; /* Reduce the gap between links */
+    justify-content: flex-start; /* Align links to the left */
+    padding: 0.8rem 1rem; /* Adjust padding and add side padding */
+  }
+}
+
+.news-nav a {
+  text-decoration: none;
+  color: #00693C;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+  white-space: nowrap;
+}
+
+.news-nav a.active,
+.news-nav a:hover {
+  background: #00693C;
+  color: #fff;
+}
+
+#donate-link {
+  display:none;
+  color: var(--brown);
+  background-color: var(--bg-light);
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#donate-link:hover {
+  background-color: var(--brown); /* darker green on hover */
+  color: #fff;
+}
+
+
+/* Make main content leave space for sidebar */
+.news-container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+
+@media (max-width: 768px) {
+  .news-container {
+    width: 95%; /* Use almost the full screen width */
+    margin: 1.5rem auto; /* Slightly reduce top/bottom margin */
+  }
+}
+
+/*Articles*/
+#articles {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+#articles h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #00693C;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+/* Featured Article */
+.featured-article {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 2rem;
+  align-items: center;
+  background: var(--green);
+  color: var(--bg-light);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2.5rem;
+}
+
+.featured-article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-content {
+  padding: 1.5rem;
+}
+
+.featured-content h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+
+}
+
+.featured-content .btn-featured {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 5px;
+  font-weight: 800;
+  transition: transform 0.3s;
+}
+
+.featured-content .btn-featured:hover {
+  transform: translateX(5px);
+}
+
+/* Articles Grid */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.articles-grid .news-card {
+  display: flex;
+  flex-direction: column;
+  background: rgb(227, 237, 227);
+  padding: 10px 10px;
+  border-radius: 12px;
+}
+
+.articles-grid .news-card img {
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  height: 180px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .featured-article {
+    grid-template-columns: 1fr; /* This is already there, which is good! */
+    text-align: left; /* Ensure text is left-aligned */
+  }
+  .featured-content {
+    padding: 1rem; /* Reduce padding on mobile */
+  }
+  .featured-content h3 {
+    font-size: 1.5rem; /* Make heading slightly smaller */
+  }
+  .featured-article img {
+    height: 250px; /* This is already there, also good! */
+  }
+}
+
+
+/*Projects*/
+/* Projects Grid */
+#projects {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+#projects h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #00693C;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  background: rgb(227, 237, 227);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #00693C;
+}
+
+.project-card p {
+  flex-grow: 1;
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  align-self: start;
+  font-weight: bold;
+  color: #00693C;
+  text-decoration: none;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+
+/*In Media*/
+#media {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+#media h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #00693C;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Media Grid */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Media Card */
+.media-card {
+  background: rgb(227, 237, 227);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px; /* Keep Instagram embeds readable */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.media-caption {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0.3rem 0;
+  text-align: left;
+}
+
+
+/* Ensure Instagram embeds are responsive */
+.media-card blockquote {
+  width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  #projects, #articles, #media {
+    padding: 2rem 0; /* Reduce top/bottom padding */
+  }
+  #projects h2, #articles h2, #media h2 {
+    font-size: 1.8rem; /* Reduce section title size */
+  }
+  .projects-grid, .articles-grid, .media-grid {
+    gap: 1.5rem; /* Slightly reduce the gap between cards */
+  }
+}
+
