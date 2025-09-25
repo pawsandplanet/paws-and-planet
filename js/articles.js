@@ -221,4 +221,85 @@ const contentData = {
 
     `
   },
+  "animal-birth-control": {
+    title:"Why Animal Birth Control Matters",
+    subtile: "The most humane way of population control",
+    date: "2025",
+    category: "Article",
+    body:`
+    <p>Fewer births mean fewer lives lost. Animal Birth Control (ABC) is the most humane and effective way to manage stray populations and improve the lives of street animals. 
+		  By preventing unwanted litters, we reduce suffering, disease, and conflict in overcrowded areas.</p>
+		  <p>Each sterilization is a step toward safer streets—for both animals and people. 
+		  Street dogs and cats face harsh conditions: traffic, starvation, abuse, and illness. 
+		  ABC protects future generations from this suffering while helping existing animals live longer, healthier lives.</p>
+		  <p>It also fosters harmony in communities. When stray populations are stable and healthy, human-animal conflict decreases. 
+		  Sterilized animals are often calmer, less territorial, and more accepted by the neighborhoods they live in.</p>
+		  <h2>Do Stray Animals Need to Reproduce?</h2>
+		  <p>It’s a common question — and an important one. The truth is: stray animals do not need to reproduce. 
+		  What they need is safety, food, health, and dignity.</p>
+		  <h3>Urban Reality vs. Natural Balance</h3>
+		  <p>In the wild, animal populations are controlled by predators, food scarcity, and natural territory boundaries. 
+		  But in cities and villages, stray dogs and cats don’t face these natural limits. Instead, they:</p>
+		  <ul>
+			<li>Reproduce rapidly, often every 6–8 months</li>
+			<li>Struggle to find enough food, water, or shelter</li>
+			<li>Face disease, abuse, road accidents, and extreme weather</li>
+			<li>Often lose most or all of their litter to starvation or illness</li>
+		 </ul>
+		 <p>So while reproduction is natural, the environment is not. The cycle of suffering continues — generation after generation.</p>
+		 <h3>What Sterilization Really Does</h3>
+		 <p>Animal Birth Control (ABC) through spaying and neutering isn’t about denying life — it’s about protecting it.</p>
+		 <p>By preventing unwanted litters:</p>
+		 <ul>
+			<li>We reduce the number of animals born into suffering</li>
+			<li>The adult animals live longer, healthier, calmer lives</li>
+			<li>Fewer puppies or kittens die from preventable causes</li>
+			<li>Communities become safer and more harmonious</li>
+		 </ul>
+		 <p>And importantly: a sterilized animal is often more accepted by the community — less aggression, less roaming, fewer conflicts.</p>
+		 <h3>The Humane Choice</h3>
+		 <p>No animal benefits from giving birth to litter after litter in dangerous, resource-scarce conditions. 
+		 Sterilization gives them a chance at a safer life — and prevents countless others from being born only to suffer.</p>
+		 <p><strong>So no, they don’t need to reproduce. They need us to care. And ABC is one of the most powerful, compassionate ways we can do that.</strong></p>
+		 <p>We handle the procedures, aftercare, and coordination — all you need to do is support the mission. Together, we’re building a kinder world for street animals.❤️</p>
+    `
+  },
+    "fostering": {
+    title:"Why Fostering Matters",
+    subtitle:"Make a difference",
+    date: "2025",
+    category: "Article",
+    body:`
+    <p>Fostering animals has a profound impact—not just on shelters and animals, but also on the people who open their homes to foster. Here’s why it matters:</p>
+		  <h2>Benefits for Shelters</h2>
+		  <p>Every foster home creates space in a shelter for another animal in need. 
+			This can help reduce overcrowding and even lower euthanasia rates in areas where animals are put down after a certain period. 
+			By fostering, you're directly helping shelters manage resources better and save more lives.</p>
+		  <h2>Benefits for the Foster Animal</h2>
+		  <p>Shelters can be stressful for many animals—loud noises, unfamiliar smells, and constant activity can overwhelm them, especially if they’re ill, nursing, elderly, or shy.</p>
+		  <p>Foster homes provide a calm and nurturing environment where these animals can heal, grow, and regain trust. Fosterers play a critical role in helping pets recover from trauma, adapt to home life, and become more adoptable. 
+		  Training, socialization, and routine care in a home setting prepare them for success in their forever homes.</p>
+		  <h2>Benefits for the Fosterer (You!) </h2>
+		  <p>Fostering is deeply fulfilling. You’re not just giving a pet temporary shelter—you’re offering them a second chance at life.</p>
+		  <h3>Why You Should Consider Fostering:</h3>
+		  <ul>
+			<li>You Help Relieve Shelter Pressure: By taking in a foster pet, you free up shelter space for others in need.</li>
+			<li>You Aid in Adoption Prep: Your foster pet will learn what it’s like to live in a real home—making them more likely to be adopted.</li>
+			<li>You Provide a Healing Space: Recovering pets do better in homes than in crowded shelters.</li>
+		  </ul>
+		  <h3>The Personal Rewards:</h3>
+		  <ul>
+		  <li>Emotional Benefits: Animals bring comfort, joy, and unconditional love. Fostering can boost your mood and well-being.</li>
+		  <li>Builds Compassion and Responsibility: Especially for families, fostering teaches empathy and the value of caring for another life.</li>
+		  <li>Positive Community Impact: Your act of kindness raises awareness and inspires others to support stray and rescue efforts.</li>
+		  <p>Fostering is one of the most direct ways you can save a life. Every animal you foster opens up space for another to be rescued from the streets or shelters. Whether it's for a few days or a few months, your care helps animals recover, socialize, and prepare for permanent adoption.
+		  </p>
+		  <p>
+			Many animals are abandoned due to injury, old age, or temporary family issues. Fostering gives them a second chance without crowding shelters. It also helps us learn more about the animal’s behavior and needs, which makes adoption more successful.
+		  </p>
+		  <p>
+			We provide all the essentials — food, meds, vet visits, support. You provide the love and a safe space. ❤️</p>
+
+    `
+    }
 };
