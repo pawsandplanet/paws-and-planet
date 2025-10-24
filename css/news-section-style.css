@@ -291,6 +291,10 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.media-card img {
+  width: 100%;
+  display: block;
+}
 
 .media-card .embed-container {
   /* This is the key property. It will hide anything that tries to overflow. */

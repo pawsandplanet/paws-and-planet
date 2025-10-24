@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Project Spotlight",
+    "img": "assets/news/projects/abc-bishnupur.jpg",
+    "desc": "A successful initiative by Paws and Planet - PNRF to manage free-roaming dogs through humane sterilisation and vaccination in Bishnupur, Bankura.",
+    "link": "article-project-detail.html?id=abc-bishnupur",
+    "linkText": "Explore Project"
+  },
+  {
+    "title": "Project Spotlight",
+    "img": "assets/news/projects/covid-feeding.jpg",
+    "desc": "How a youth-led NGO ensured that the city's stray dogs did not go hungry during the 2020 COVID-19 lockdown.",
+    "link": "article-project-detail.html?id=covid-feeding",
+    "linkText": "Explore Project"
+  },
+  {
+    "title": "Project Spotlight",
+    "img": "assets/news/projects/rescue-operations-Covid-19.jpg",
+    "desc": "When the world stood still in 2020, our mission didn't. This is the story of how volunteers continued rescues amid lockdowns.",
+    "link": "article-project-detail.html?id=rescue-operations-covid",
+    "linkText": "Explore Project"
+  },
+  {
+    "title": "Featured Article",
+    "img": "assets/news/articles/ornamental-fishes.jpg",
+    "desc": "The Living Jewels of Galiff Street: A Story of Vibrant Trade and Hidden Suffering.",
+    "link": "article-project-detail.html?id=ornamental-fishes",
+    "linkText": "Read Article"
+  },
+  {
+    "title": "Featured Article",
+    "img": "assets/news/articles/poultry-farms-report.jpg",
+    "desc": "Investigation Reveals Major Health and Environmental Risks at West Bengal Poultry Farms.",
+    "link": "article-project-detail.html?id=poultry-farms-report",
+    "linkText": "Read Article"
+  },
+  {
+    "title": "Media Mention",
+    "img": "assets/news/June-Malia.jpg",
+    "desc": "Supported content and messaging for June Malia’s speech on animal laws as featured on PFA PPF Instagram.",
+    "link": "https://www.instagram.com/p/DHlUM4CTq_d/?hl=en",
+    "linkText": "View Highlight"
+  },
+  {
+    "title": "Media Mention",
+    "img": "assets/newspaper-clipping/news1.jpg",
+    "desc": "From making rangolis to planting saplings, some walk extra mile to make celebrations greener.",
+    "link": "https://timesofindia.indiatimes.com/city/kolkata/from-making-rangolis-to-planting-saplings-some-walk-extra-mile-to-make-celebrations-greener/articleshow/124709941.cms",
+    "linkText": "View Highlight"
+  },
+  {
+    "title": "Media Mention",
+    "img": "assets/newspaper-clipping/news2.jpg",
+    "desc": "Pet Parents urge govt to set up 24x7 emergency vet services.",
+    "link": "https://timesofindia.indiatimes.com/city/kolkata/pet-parents-urge-govt-to-set-up-24x7-emergency-vet-services/articleshow/124432126.cms",
+    "linkText": "View Highlight"
+  },
+  {
+    "title": "Media Mention",
+    "img": "assets/newspaper-clipping/news5.jpg",
+    "desc": "Metro to washrooms, strays seek shelter from sound.",
+    "link": "https://timesofindia.indiatimes.com/city/kolkata/metro-to-washrooms-strays-seek-shelter-from-sound/articleshow/124727871.cms",
+    "linkText": "View Highlight"
+  }
+]
+
